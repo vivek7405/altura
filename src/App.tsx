@@ -10,15 +10,15 @@ export default function App() {
   const [nftModalContent, setNFTModalContent] = useState(null as NFT | null);
 
   return (
-    <main className="min-h-screen w-full bg-neutral-900 sm:flex sm:items-center sm:justify-center">
-      <div className="flex flex-col space-y-10 p-10">
+    <main className="min-h-screen w-full bg-neutral-900 flex items-center justify-center">
+      <div className="w-full max-w-screen-2xl space-y-10 p-10 flex flex-col items-center justify-center">
         {/* Header */}
-        <div className="flex items-center justify-center text-center text-7xl font-bold text-white">
+        <div className="w-full text-center text-7xl font-bold text-white">
           Retro NFT
         </div>
 
         {/* NFT Cards */}
-        <div className="grid-col-1 grid items-center justify-center gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="w-full md:w-3/4 grid-col-1 grid items-center justify-center gap-6 md:grid-cols-2 xl:grid-cols-3">
           {nfts.map((nft) => (
             <NFTCard
               key={nft.id}
@@ -31,7 +31,7 @@ export default function App() {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
           <a
             href="https://www.alturanft.com"
             target="_blank"
