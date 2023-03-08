@@ -30,7 +30,7 @@ export default function NFTCard({
             <img
               alt={nft.name}
               src={nft.imgSrc}
-              className="h-full border-r-4 border-black"
+              className="w-28 border-r-4 border-black"
             />
             <div className="flex h-full w-full items-center justify-center truncate p-4 text-center text-2xl font-bold">
               <span className="truncate">{nft.name}</span>
